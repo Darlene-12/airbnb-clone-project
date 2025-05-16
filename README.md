@@ -45,53 +45,44 @@ StayEase is a modern accommodation booking platform inspired by Zostel and Airbn
 
 ## 🏗️ Project Structure
 stayease/
-├── public/                     # Static files
-│   ├── images/                 # Static images
-│   └── favicon.ico             # Site favicon
-├── src/
-│   ├── assets/                 # Dynamic assets
-│   │   ├── images/             # Images used in components
-│   │   └── icons/              # SVG icons
+├── public/                     # Static files accessible by the browser
+│   ├── images/                 # Static images used across the app
+│   └── favicon.ico             # Website favicon
+├── src/                        # Application source code
+│   ├── assets/                 # Project-wide assets
+│   │   ├── images/             # Component-specific images
+│   │   └── icons/              # SVG or icon assets
 │   ├── components/             # Reusable UI components
-│   │   ├── common/             # Buttons, inputs, etc.
+│   │   ├── common/             # Shared UI elements (e.g. buttons, cards)
 │   │   │   ├── Button.jsx
 │   │   │   ├── Input.jsx
 │   │   │   ├── Card.jsx
-│   │   │   └── ...
-│   │   ├── layout/             # Layout components
+│   │   ├── layout/             # Layout wrappers (Navbar, Footer)
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Footer.jsx
-│   │   │   └── ...
-│   │   ├── property/           # Property-related components
+│   │   ├── property/           # Property display components
 │   │   │   ├── PropertyCard.jsx
 │   │   │   ├── PropertyGrid.jsx
 │   │   │   ├── PropertyDetails.jsx
-│   │   │   └── ...
-│   │   ├── booking/            # Booking-related components
+│   │   ├── booking/            # Booking flow components
 │   │   │   ├── BookingForm.jsx
 │   │   │   ├── Calendar.jsx
-│   │   │   └── ...
-│   │   ├── reviews/            # Review components
+│   │   ├── reviews/            # Reviews system
 │   │   │   ├── ReviewCard.jsx
 │   │   │   ├── ReviewForm.jsx
-│   │   │   └── ...
-│   │   ├── map/                # Map components
+│   │   ├── map/                # Map integration
 │   │   │   ├── MapView.jsx
 │   │   │   ├── Marker.jsx
-│   │   │   └── ...
-│   │   └── host/               # Host dashboard components
+│   │   └── host/               # Host management dashboard
 │   │       ├── ListingForm.jsx
 │   │       ├── BookingsTable.jsx
-│   │       └── ...
-│   ├── context/                # React contexts
+│   ├── context/                # React context providers (state management)
 │   │   ├── AuthContext.jsx
 │   │   ├── BookingContext.jsx
-│   │   └── ...
 │   ├── hooks/                  # Custom React hooks
 │   │   ├── useAuth.js
 │   │   ├── useProperties.js
-│   │   └── ...
-│   ├── pages/                  # Page components
+│   ├── pages/                  # Application routes/pages
 │   │   ├── Home.jsx
 │   │   ├── PropertyListing.jsx
 │   │   ├── PropertyDetail.jsx
@@ -100,26 +91,24 @@ stayease/
 │   │   ├── Register.jsx
 │   │   ├── UserProfile.jsx
 │   │   ├── HostDashboard.jsx
-│   │   └── ...
-│   ├── services/               # API services
+│   ├── services/               # API call functions
 │   │   ├── api.js
 │   │   ├── auth.js
 │   │   ├── properties.js
 │   │   ├── bookings.js
 │   │   ├── payments.js
-│   │   └── ...
-│   ├── utils/                  # Utility functions
+│   ├── utils/                  # Utility/helper functions
 │   │   ├── formatters.js
 │   │   ├── validators.js
-│   │   └── ...
-│   ├── App.jsx                 # Main App component
-│   └── main.jsx                # Entry point
-├── .eslintrc.js                # ESLint configuration
-├── .prettierrc                 # Prettier configuration
-├── vite.config.js              # Vite configuration
-├── tailwind.config.js          # Tailwind configuration
-├── package.json                # Project dependencies
-└── README.md                   # This file
+│   ├── App.jsx                 # Root app component
+│   └── main.jsx                # Entry point (ReactDOM render)
+├── .eslintrc.js                # Linter configuration
+├── .prettierrc                 # Prettier formatting rules
+├── vite.config.js              # Vite dev/build config
+├── tailwind.config.js          # TailwindCSS configuration
+├── package.json                # Project dependencies and scripts
+└── README.md                   # Project documentation (this file)
+
 
 
 ## 📝 Development Guidelines
