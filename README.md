@@ -1,181 +1,179 @@
-# StayEase – Airbnb Clone Project 🏠✨
+# StayEase: Accommodation Booking Platform
 
-## 📌 Project Overview
+![StayEase Logo](path/to/logo.png)
 
-**StayEase** is a full-stack clone of the Airbnb platform. The project simulates a simplified accommodation booking experience, allowing users to browse property listings, view detailed property information, and make bookings. This hands-on project demonstrates how a professional web application is planned, designed, and built.
+## 📌 Overview
 
----
+StayEase is a modern accommodation booking platform inspired by Zostel and Airbnb. The application allows users to discover, browse, and book unique stays around the world with an intuitive and responsive interface.
 
-## 🎯 Project Goals
+## 🌟 Features
 
-- Implement responsive, mobile-first UI/UX
-- Build component-based front-end architecture using React
-- Learn team collaboration and role ownership
-- Practice web development best practices
-- Explore full-stack workflows (frontend, backend, deployment)
+- **Property Discovery**: Browse accommodations with advanced filtering options
+- **Detailed Listings**: View comprehensive property details with image galleries
+- **User Authentication**: Secure login and registration system
+- **Booking System**: Reserve accommodations with date selection
+- **Responsive Design**: Seamless experience across all devices
+- **User Reviews & Ratings**: Leave and read authentic reviews
+- **Map Integration**: View property locations on interactive maps
+- **Payment Processing**: Secure payment system for bookings
+- **Host Dashboard**: For property owners to manage their listings
+- **Availability Calendar**: Real-time booking availability
 
----
+## 🛠️ Tech Stack
 
-## ⚙️ Tech Stack
-
-- **Frontend**: React, HTML5, CSS3, JavaScript (ES6+)
+### Frontend
+- **Framework**: React 18+ with Vite
 - **Styling**: TailwindCSS
-- **Design Tool**: Figma
-- **Version Control**: Git + GitHub
-- **Optional Backend (Illustrative)**: Django, MySQL
+- **State Management**: React Context API / Redux Toolkit
+- **Routing**: React Router v6
+- **Form Handling**: React Hook Form
+- **Data Fetching**: Axios / React Query
+- **Maps**: Mapbox/Google Maps API
+- **Payment**: Stripe Integration
 
----
+### Development Tools
+- **Version Control**: Git & GitHub
+- **Package Manager**: npm / yarn
+- **Linting & Formatting**: ESLint & Prettier
+- **Design**: Figma
 
-## 🎨 UI/UX Design Planning
+## 🚀 Getting Started
 
-### ✨ Design Goals
+### Prerequisites
+- Node.js (v16+)
+- npm or yarn
 
-- Build an intuitive and simple booking flow
-- Ensure fast load time and responsiveness
-- Create a modern, visually consistent UI
-- Prioritize accessibility (WCAG standards)
+## 🏗️ Project Structure
+stayease/
+├── public/                     # Static files
+│   ├── images/                 # Static images
+│   └── favicon.ico             # Site favicon
+├── src/
+│   ├── assets/                 # Dynamic assets
+│   │   ├── images/             # Images used in components
+│   │   └── icons/              # SVG icons
+│   ├── components/             # Reusable UI components
+│   │   ├── common/             # Buttons, inputs, etc.
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Card.jsx
+│   │   │   └── ...
+│   │   ├── layout/             # Layout components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── ...
+│   │   ├── property/           # Property-related components
+│   │   │   ├── PropertyCard.jsx
+│   │   │   ├── PropertyGrid.jsx
+│   │   │   ├── PropertyDetails.jsx
+│   │   │   └── ...
+│   │   ├── booking/            # Booking-related components
+│   │   │   ├── BookingForm.jsx
+│   │   │   ├── Calendar.jsx
+│   │   │   └── ...
+│   │   ├── reviews/            # Review components
+│   │   │   ├── ReviewCard.jsx
+│   │   │   ├── ReviewForm.jsx
+│   │   │   └── ...
+│   │   ├── map/                # Map components
+│   │   │   ├── MapView.jsx
+│   │   │   ├── Marker.jsx
+│   │   │   └── ...
+│   │   └── host/               # Host dashboard components
+│   │       ├── ListingForm.jsx
+│   │       ├── BookingsTable.jsx
+│   │       └── ...
+│   ├── context/                # React contexts
+│   │   ├── AuthContext.jsx
+│   │   ├── BookingContext.jsx
+│   │   └── ...
+│   ├── hooks/                  # Custom React hooks
+│   │   ├── useAuth.js
+│   │   ├── useProperties.js
+│   │   └── ...
+│   ├── pages/                  # Page components
+│   │   ├── Home.jsx
+│   │   ├── PropertyListing.jsx
+│   │   ├── PropertyDetail.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── UserProfile.jsx
+│   │   ├── HostDashboard.jsx
+│   │   └── ...
+│   ├── services/               # API services
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── properties.js
+│   │   ├── bookings.js
+│   │   ├── payments.js
+│   │   └── ...
+│   ├── utils/                  # Utility functions
+│   │   ├── formatters.js
+│   │   ├── validators.js
+│   │   └── ...
+│   ├── App.jsx                 # Main App component
+│   └── main.jsx                # Entry point
+├── .eslintrc.js                # ESLint configuration
+├── .prettierrc                 # Prettier configuration
+├── vite.config.js              # Vite configuration
+├── tailwind.config.js          # Tailwind configuration
+├── package.json                # Project dependencies
+└── README.md                   # This file
 
-### 🔑 Key Features
 
-- Property listings with filters and sorting
-- Detailed property views with images and descriptions
-- Booking form with calendar and guest selection
-- User authentication
+## 📝 Development Guidelines
 
-### 📄 Primary Pages
+### 🔧 Coding Standards
 
-| Page Name             | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| Property Listing View | Grid display of available properties with price, image, and location info |
-| Listing Detailed View | In-depth view of a selected property with booking form                     |
-| Simple Checkout View  | Streamlined booking confirmation and payment process                       |
+- Use functional components with hooks.
+- Implement proper error handling and loading states
+- Write sematic HTML for accessibility
+- Follow TailwindCSS best practices
+- Maintain a modular yet reusable component structure
 
-### 🧠 Why User-Friendly Design Matters
 
-A clean, intuitive interface improves user satisfaction, increases conversion rates, and reduces bounce. Booking should feel natural, fast, and safe for the user.
+### 🔁 Git Workflow
 
----
+1. Create feature branches from `develop`:
+   ```bash
+   git checkout -b feature/feature-name
+2. Make commits with clear descriptive messages
+3. Submit all requests to develop
+4. Squash commits when merging
 
-## 🖼️ More UI/UX Design Planning (Figma Integration)
+## 📄 License
 
-### 🎨 Color Styles
+### MIT LICENSE
+MIT License
 
-- **Primary**: `#FF5A5F`
-- **Secondary**: `#008489`
-- **Background**: `#FFFFFF`
-- **Text**: `#222222`
-- **Secondary Text**: `#717171`
+Copyright (c) 2025 Darlene Wendie
 
-### 🔠 Typography
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-- **Primary Font**: Circular
-- **Headings**: Bold (700), 24px–32px
-- **Body Text**: Medium (500), 16px
-- **Secondary Text**: Book (400), 14px
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### 💡 Importance of Design Properties
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Identifying design tokens (colors, fonts, spacing) from mockups ensures **consistency**, reduces design debt, and improves team coordination when building reusable components.
+### Acknowledgments
+- Design inspiration from Zostel and Airbnb
+- Styling framework TailwindCSS
+- Form handling: React Hook Form
+- Map intergration: Mapbox
 
----
+  Made by: Darlene Wendie
 
-## 👥 Project Roles and Responsibilities
 
-| Role              | Responsibilities                                                                 |
-|-------------------|----------------------------------------------------------------------------------|
-| Project Manager    | Oversees project delivery, manages tasks and timeline                          |
-| Frontend Developers| Build UI components, handle interactivity and responsiveness                   |
-| Backend Developers | Create APIs, manage databases, and connect with frontend                        |
-| Designers          | Create mockups, define branding, ensure usability                              |
-| QA/Testers         | Write and execute tests, report bugs, validate features                        |
-| DevOps Engineers   | Set up CI/CD pipelines, manage deployment and server infrastructure            |
-| Product Owner      | Define requirements, prioritize features, provide business direction            |
-| Scrum Master       | Facilitate agile processes, remove blockers, organize team ceremonies          |
 
----
-
-## 🧩 UI Component Patterns
-
-We will use reusable, modular UI components to speed up development and ensure design consistency:
-
-### Planned Components
-
-#### ✅ Navbar
-- Logo
-- Search bar
-- User menu
-- Responsive dropdown
-
-#### ✅ Property Card
-- Property image
-- Location, price, and rating
-- Favorite button
-
-#### ✅ Footer
-- Site links (About, Help, Careers)
-- Social media icons
-- Copyright
-
-All components will follow mobile-first responsive design and accessibility standards.
-
----
-
-## 🗂️ Project Timeline Overview
-
-| Week       | Milestone                                 |
-|------------|--------------------------------------------|
-| Week 1–2   | Project setup, UI/UX planning              |
-| Week 3–4   | React + TypeScript basics                  |
-| Week 5–6   | Advanced components and state management   |
-| Week 7–8   | API integration and routing                |
-| Week 9–10  | Authentication and backend connection      |
-| Week 11–12 | Checkout system and booking logic          |
-| Week 13–14 | Testing, debugging                         |
-| Week 15–16 | Final review and deployment                |
-
----
-
-## 🧪 Best Practices Checklist
-
-- ✅ Mobile-first design
-- ✅ Semantic HTML and ARIA attributes
-- ✅ Clean, readable, and modular code
-- ✅ Reusable component structure
-- ✅ Git branches for each feature
-- ✅ Meaningful and consistent commit messages
-- ✅ Updated documentation
-- ✅ Unit and integration tests
-
----
-
-## 📁 Repository Setup (Task 0: Project Initialization)
-
-✅ GitHub Repository: `airbnb-clone-project`  
-✅ File: `README.md`  
-✅ Contains:
-- Project overview
-- Goals
-- Tech stack
-
----
-
-## ✅ Manual & Auto Check Coverage Summary
-
-This README includes:
-
-- [x] **Project Initialization**
-- [x] **UI/UX Design Planning** with table of primary pages
-- [x] **Figma specs: color styles + typography**
-- [x] **Design justification**
-- [x] **Roles and Responsibilities**
-- [x] **Planned UI Component Patterns**
-
----
-
-## 📚 References
-
-- Airbnb.com UI Inspiration – https://www.airbnb.com/
-- WCAG Accessibility Guidelines – https://www.w3.org/WAI/
-- GitHub Docs – https://docs.github.com/en
-- Figma.com Design Specs – https://www.figma.com/
-- Atlassian Git Tutorials – https://www.atlassian.com/git/tutorials
