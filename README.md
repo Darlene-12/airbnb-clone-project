@@ -44,70 +44,7 @@ StayEase is a modern accommodation booking platform inspired by Zostel and Airbn
 - npm or yarn
 
 ## 🏗️ Project Structure
-stayease/
-├── public/                     # Static files accessible by the browser
-│   ├── images/                 # Static images used across the app
-│   └── favicon.ico             # Website favicon
-├── src/                        # Application source code
-│   ├── assets/                 # Project-wide assets
-│   │   ├── images/             # Component-specific images
-│   │   └── icons/              # SVG or icon assets
-│   ├── components/             # Reusable UI components
-│   │   ├── common/             # Shared UI elements (e.g. buttons, cards)
-│   │   │   ├── Button.jsx
-│   │   │   ├── Input.jsx
-│   │   │   ├── Card.jsx
-│   │   ├── layout/             # Layout wrappers (Navbar, Footer)
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Footer.jsx
-│   │   ├── property/           # Property display components
-│   │   │   ├── PropertyCard.jsx
-│   │   │   ├── PropertyGrid.jsx
-│   │   │   ├── PropertyDetails.jsx
-│   │   ├── booking/            # Booking flow components
-│   │   │   ├── BookingForm.jsx
-│   │   │   ├── Calendar.jsx
-│   │   ├── reviews/            # Reviews system
-│   │   │   ├── ReviewCard.jsx
-│   │   │   ├── ReviewForm.jsx
-│   │   ├── map/                # Map integration
-│   │   │   ├── MapView.jsx
-│   │   │   ├── Marker.jsx
-│   │   └── host/               # Host management dashboard
-│   │       ├── ListingForm.jsx
-│   │       ├── BookingsTable.jsx
-│   ├── context/                # React context providers (state management)
-│   │   ├── AuthContext.jsx
-│   │   ├── BookingContext.jsx
-│   ├── hooks/                  # Custom React hooks
-│   │   ├── useAuth.js
-│   │   ├── useProperties.js
-│   ├── pages/                  # Application routes/pages
-│   │   ├── Home.jsx
-│   │   ├── PropertyListing.jsx
-│   │   ├── PropertyDetail.jsx
-│   │   ├── Checkout.jsx
-│   │   ├── Login.jsx
-│   │   ├── Register.jsx
-│   │   ├── UserProfile.jsx
-│   │   ├── HostDashboard.jsx
-│   ├── services/               # API call functions
-│   │   ├── api.js
-│   │   ├── auth.js
-│   │   ├── properties.js
-│   │   ├── bookings.js
-│   │   ├── payments.js
-│   ├── utils/                  # Utility/helper functions
-│   │   ├── formatters.js
-│   │   ├── validators.js
-│   ├── App.jsx                 # Root app component
-│   └── main.jsx                # Entry point (ReactDOM render)
-├── .eslintrc.js                # Linter configuration
-├── .prettierrc                 # Prettier formatting rules
-├── vite.config.js              # Vite dev/build config
-├── tailwind.config.js          # TailwindCSS configuration
-├── package.json                # Project dependencies and scripts
-└── README.md                   # Project documentation (this file)
+
 
 
 
@@ -121,6 +58,70 @@ stayease/
 - Follow TailwindCSS best practices
 - Maintain a modular yet reusable component structure
 
+stayease/
+├── public/                     
+│   ├── images/                 
+│   └── favicon.ico             
+├── src/                        
+│   ├── assets/                 
+│   │   ├── images/             
+│   │   └── icons/              
+│   ├── components/             
+│   │   ├── common/             
+│   │   │   ├── Button.jsx      
+│   │   │   ├── Input.jsx       
+│   │   │   ├── Card.jsx        
+│   │   ├── layout/             
+│   │   │   ├── Navbar.jsx      
+│   │   │   ├── Footer.jsx      
+│   │   ├── property/           
+│   │   │   ├── PropertyCard.jsx
+│   │   │   ├── PropertyGrid.jsx
+│   │   │   ├── PropertyDetails.jsx
+│   │   ├── booking/            
+│   │   │   ├── BookingForm.jsx 
+│   │   │   ├── Calendar.jsx    
+│   │   ├── reviews/            
+│   │   │   ├── ReviewCard.jsx  
+│   │   │   ├── ReviewForm.jsx  
+│   │   ├── map/                
+│   │   │   ├── MapView.jsx     
+│   │   │   ├── Marker.jsx      
+│   │   └── host/               
+│   │       ├── ListingForm.jsx 
+│   │       ├── BookingsTable.jsx
+│   ├── context/                
+│   │   ├── AuthContext.jsx     
+│   │   ├── BookingContext.jsx  
+│   ├── hooks/                  
+│   │   ├── useAuth.js          
+│   │   ├── useProperties.js    
+│   ├── pages/                  
+│   │   ├── Home.jsx            
+│   │   ├── PropertyListing.jsx 
+│   │   ├── PropertyDetail.jsx  
+│   │   ├── Checkout.jsx        
+│   │   ├── Login.jsx           
+│   │   ├── Register.jsx        
+│   │   ├── UserProfile.jsx     
+│   │   ├── HostDashboard.jsx   
+│   ├── services/               
+│   │   ├── api.js              
+│   │   ├── auth.js             
+│   │   ├── properties.js       
+│   │   ├── bookings.js         
+│   │   ├── payments.js         
+│   ├── utils/                  
+│   │   ├── formatters.js       
+│   │   ├── validators.js       
+│   ├── App.jsx                 
+│   └── main.jsx                
+├── .eslintrc.js                
+├── .prettierrc                 
+├── vite.config.js              
+├── tailwind.config.js          
+├── package.json                
+└── README.md                   
 
 ### 🔁 Git Workflow
 
